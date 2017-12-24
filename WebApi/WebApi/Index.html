@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Productos</title>    
+</head>
+<body>
+    <!-- LISTAR -->
+    <div> 
+        <h2>Grabar en </h2>
+        <input type="radio" id="bd" name="bd" value="1" checked="checked" onclick="fn_Check(1);"/>Base De Datos
+        <input type="radio" id="xml" name="bd" value="2" onclick="fn_Check(2);"/>XML
+        <h2>Lista de Productos</h2>        
+        <!--<table id='tabla'  border="1" style="width:400px;">            
+        <tr>
+            <td align=center>Codigo</td>
+            <td align=center>Nombre</td>
+            <td align=center>Precio</td>
+            <td align=center>Stock</td>
+            <td align=center>Categoria</td>
+        </tr>          
+        </table>-->
+        <ul id="productos"></ul>  
+    </div>
+    <!-- BUSCAR -->
+    <div>
+        <h2>Buscar Producto</h2>
+        <input type="button" id="buscar" value="Buscar Producto" />
+        <input type="text" id="txt_cod" size="5" />    <br />
+    </div>
+    <!-- AGREGAR -->
+    <div>
+        <h2>Agregar Nuevo Producto</h2>
+        Nombre : <input type="text" id="txt_nombre" size="15" />    <br />
+        Precio : <input type="text" id="txt_precio" size="10" maxlength="10" />  <br />
+        Stock :  <input type="text" id="txt_stock" size="5" maxlength="5" /> <br />
+        Categoria :  
+        <select id="ddl_categoria" name="ddl_categoria" >
+            <option value="1">bebidas</option>
+            <option value="2">Carnes</option>
+            <option value="3">Frutas</option>           
+        </select> 
+             <p></p>
+        <input type="button" id="crear" value="Agregar" />       
+        <input type="button" id="actualizar" value="Actualizar" />    
+    </div>
+    <!-- ELIMINAR -->
+    <div>
+        <h2>Eliminar Producto</h2>
+        <input type="button" id="eliminar" value="Eliminar Producto" />
+        <input type="text" id="txt_cod_e" size="5" />    <br />
+    </div>
+   
+
+        <!--<script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-1.9.0.js"></script>-->
+        <script src="jquery-1.6.2.min.js" type="text/javascript"></script>
+        <script src="Index.html.js" type="text/javascript"></script>
+
+</body>
+</html>
